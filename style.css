@@ -1,8 +1,13 @@
 body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
 }
 /* Conteúdo da barra de navegação superior */ 
 .nav {
-    background-color: #ffffff;
+    background-color: green;
     border: 1px solid #DBDBDB;
     height: 54px;
     display: flex;
@@ -12,6 +17,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 .nav img {
     width: 103px;
@@ -27,51 +33,113 @@ input {
 
 /* Conteúdo do feed*/
 .feed {
+    background-color: palevioletred;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 /* Conteúdo dos storys*/
 .storys {
+    background-color: crimson;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     width: 615px;
     height: 118px;
     margin-top: 88px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 }
-.user img{
+.user {
+    background-color: violet;
+    width: 66px;
+    height: 86px;
+    margin-top: 14px;
+    margin-left: 14px;
+    position: relative;
+}
+.back-user {
+    width: 66px;
+    height: 66px;
+}
+.front-user {
+    left: 5px;
+    top: 5px;
     width: 56px;
     height: 56px;
+    border-radius: 28px;
+    position: absolute;
 }
+.user p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
 /* Conteúdo dos posts*/
 .post {
+    background-color: red;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     width: 614px;
     height: 749px;
     margin-top: 24px;
+    margin-bottom: 60px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .perfil {
+    background-color: blue;
     border: 1px solid #EFEFEF;
     width: 614px;
-    height: ;
+    height: 68.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.perfil img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-left: 17px;
+}
+.perfil p {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500px;
+}
+.conteudo-post img {
+    width: 612px;
+    height:612px;
+}
+.discricao-post {
+    background-color: yellow;
+    border: 1px solid #EFEFEF;
+    width: 614px;
+    height: 68.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infos {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.perfil img {
+.infos img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
     margin-left: 17px;
-    width: 56px;
-    height: 56px;
 }
-p {
-    margin-left: 15px;
+.infos p {
+    margin-left: 5px;
+    font-size: 14px;
 }
+
 /* Conteúdo da sidebar*/
