@@ -2,24 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <title>Instagram</title>
     </head>
     <body>
         <div class="nav">
             <div class="icons-esquerda ">
                 <ion-icon name="logo-instagram"></ion-icon>
-                <img src="/imagens/logo.png" alt="O nome Instagram em preto com fundo branco">
+                <div id="verticalBar"></div>
+                <div><img src="/imagens/logo.png" alt="O nome Instagram em preto com fundo branco"></div>
             </div>
             <input type="text" placeholder="Pesquisar">
             <div>
-                <ion-icon name="paper-plane-outline"></ion-icon>
+                <ion-icon class="icons-direita" name="paper-plane-outline"></ion-icon>
                 <ion-icon class="icons-direita" name="compass-outline"></ion-icon>
                 <ion-icon class="icons-direita" name="heart-outline"></ion-icon>
                 <ion-icon class="icons-direita" name="person-outline"></ion-icon>
             </div>
+        </div>
+        <div class="nav-mobile">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <div><img src="/imagens/logo.png" alt="O nome Instagram em preto com fundo branco"></div>
+            <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
         <div class="feed">
             <div class="storys-posts">
@@ -76,7 +82,7 @@
                             <p>Enid</p>
                             </div>
                             <div>
-                                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                <ion-icon name="ellipsis-horizontal"></ion-icon>
                             </div>
                         </div>
                     </div>
@@ -102,6 +108,27 @@
                 </div> <!-- final do post -->
             </div> <!-- final de storys-post -->
             <div class="sidebar">
+                <div class="login">
+                    <img src="/imagens/wandinha.jpeg" alt="">
+                    <div class="nome-login">
+                        <p>Wandinha</p>
+                        <p>Wandinha Addams</p>
+                    </div>
+                </div>
+                <div class="sugestoes">
+                    <p>Sugestão para você</p>
+                    <p>Ver tudo</p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-perfil">
+                        <img src="/imagens/yoko.jpeg" alt="">
+                        <div>
+                            <p>yoko</p>
+                            <p>Yoko Tanaka</p>
+                        </div>
+                    </div>
+                    <a href="">Seguir</a>
+                </div>
             </div> <!-- final da sidebar -->
         </div> <!-- final do feed -->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
