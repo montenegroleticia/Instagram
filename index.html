@@ -9,11 +9,24 @@
     </head>
     <body>
         <div class="nav">
-            <img src="/imagens/logo.png" alt="O nome Instagram em preto com fundo branco">
-                    <input type="text" placeholder="Pesquisar">
+            <div class="icons-esquerda ">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <img src="/imagens/logo.png" alt="O nome Instagram em preto com fundo branco">
+            </div>
+            <input type="text" placeholder="Pesquisar">
+            <div>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <ion-icon class="icons-direita" name="compass-outline"></ion-icon>
+                <ion-icon class="icons-direita" name="heart-outline"></ion-icon>
+                <ion-icon class="icons-direita" name="person-outline"></ion-icon>
+            </div>
         </div>
-            <div class="feed">
+        <div class="feed">
+            <div class="storys-posts">
                 <div class="storys">
+                    <div class="storys-emoji">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                    </div>
                     <div class="user">
                         <img  class="back-user" src="/imagens/stories_background.jpg" alt="">
                         <img class="front-user" src="/imagens/enid.jpeg" alt="">
@@ -26,53 +39,71 @@
                     </div>
                     <div class="user">
                         <img  class="back-user" src="/imagens/stories_background.jpg" alt="">
-                        <img class="front-user" src="/imagens/xavier.jpeg" alt="">
-                        <p>Xavier</p>
+                        <img class="front-user" src="/imagens/bianca.jpeg" alt="">
+                        <p>Bianca</p>
                     </div>
                     <div class="user">
                         <img  class="back-user" src="/imagens/stories_background.jpg" alt="">
-                        <img class="front-user" src="/imagens/xavier.jpeg" alt="">
-                        <p>Xavier</p>
+                        <img class="front-user" src="/imagens/ajax.jpeg" alt="">
+                        <p>Ajax</p>
                     </div>
                     <div class="user">
                         <img  class="back-user" src="/imagens/stories_background.jpg" alt="">
-                        <img class="front-user" src="/imagens/xavier.jpeg" alt="">
-                        <p>Xavier</p>
+                        <img class="front-user" src="/imagens/thing.jpeg" alt="">
+                        <p>Thing</p>
                     </div>
                     <div class="user">
                         <img  class="back-user" src="/imagens/stories_background.jpg" alt="">
-                        <img class="front-user" src="/imagens/xavier.jpeg" alt="">
-                        <p>Xavier</p>
+                        <img class="front-user" src="/imagens/eugene.jpeg" alt="">
+                        <p>Eugene</p>
                     </div>
                     <div class="user">
                         <img  class="back-user" src="/imagens/stories_background.jpg" alt="">
-                        <img class="front-user" src="/imagens/xavier.jpeg" alt="">
-                        <p>Xavier</p>
+                        <img class="front-user" src="/imagens/tyler.jpeg" alt="">
+                        <p>Tyler</p>
                     </div>
                     <div class="user">
                         <img  class="back-user" src="/imagens/stories_background.jpg" alt="">
-                        <img class="front-user" src="/imagens/xavier.jpeg" alt="">
-                        <p>Xavier</p>
+                        <img class="front-user" src="/imagens/mortícia.jpeg" alt="">
+                        <p>Morticia</p>
                     </div>
-                </div>
+                </div> <!-- final dos storys -->
                 <div class="posts">
                     <div class="post">
                         <div class="perfil">
-                            <img  src="/imagens/enid.jpeg" alt="menina loira com mechas rosa e camisa colorida">
+                            <div class="user-perfil">
+                                <img  src="/imagens/enid.jpeg" alt="menina loira com mechas rosa e camisa colorida">
                             <p>Enid</p>
-                        </div>
-                        <div class="conteudo-post" >
-                            <img src="/imagens/post-enid.jpg" alt="">
-                        </div>
-                        <div class="discricao-post" >
-                            <div class="infos">
-                                <img src="/imagens/xavier.jpeg" alt="">
-                                <p>Curtido por <strong>Xavier</strong> e <strong>outras 5.926 pessoas</strong></p>
                             </div>
-                        </div> <!-- final da discrição -->
+                            <div>
+                                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div> <!-- final do post -->
-        </div> <!-- final da nav -->
+                    <div class="conteudo-post" >
+                        <img src="/imagens/post-enid.jpg" alt="">
+                    </div>
+                    <div class="infos">
+                        <div class="infos-emoji">
+                            <div class="esquerda-emoji">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <ion-icon name="chatbubble-outline"></ion-icon>
+                                <ion-icon name="paper-plane-outline"></ion-icon>
+                            </div>
+                            <div class="direita-emoji">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div> <!-- final da info-emoji -->
+                        <div class="curtidas">
+                            <img src="/imagens/xavier.jpeg" alt="">
+                            <p>Curtido por <strong>Xavier</strong> e <strong>outras 5.926 pessoas</strong></p>
+                        </div> <!-- final da curtidas -->
+                    </div> <!-- final da infos -->
+                </div> <!-- final do post -->
+            </div> <!-- final de storys-post -->
+            <div class="sidebar">
+            </div> <!-- final da sidebar -->
+        </div> <!-- final do feed -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </body>
 </html>
