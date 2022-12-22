@@ -193,14 +193,19 @@ input {
 
 /* Conteúdo da sidebar*/
 .sidebar {
-    background-color: purple;
     width: 293px;
-    height: 500px;
-    margin-top: 15px;
-    margin-left: 29px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    position: relative;
+    padding-left: 29px;
+}
+.sidebar-conteudo {
+    width: 293px;
+    position: fixed;
 }
 .login {
-    background-color: palevioletred;
+    margin-top: 24px;
     display: flex;
     align-items: center;
 }
@@ -210,16 +215,20 @@ input {
     border-radius: 28px;
 }
 .sugestoes {
-    background-color: peru;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 24px;
 }
 .sugestao {
-    background-color: green;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 17px;
+    margin-bottom: 16px;
+    color: #262626;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 }
 .sugestao-perfil {
     display: flex;
@@ -231,17 +240,31 @@ input {
     height: 32px;
     border-radius: 16px;
 }
-.sugestao p {
-    color: #262626;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-}
 .sugestao a {
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     color: #139EF2;
+}
+.cinza-sugestao {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+}
+.cinza {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+    margin-left: 10px;
+}
+.negrito {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 11px;
+    color: #262626;
 }
 
 /*Navegação inferior para mobile*/
@@ -290,5 +313,8 @@ input {
         bottom: 0;
         right: 0;
         left: 0;
+    }
+    .storys-emoji {
+        display: none;
     }
 }
