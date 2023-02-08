@@ -15,4 +15,4 @@
 
 ### Versão mobile 👇:
 
-[![https://hx24kk.csb.app/](/imagens/instagram-descktop.png)](https://hx24kk.csb.app/)
+[![https://hx24kk.csb.app/](./imagens/instagram-mobile.png)](https://hx24kk.csb.app/)
